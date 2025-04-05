@@ -8,3 +8,27 @@ NPZ = "15e1cf62-19b3-5cfa-8e77-841668bca605"
 ProgressMeter = "92933f4c-e287-5a05-a399-4b506db050ca"
 SliceMap = "82cb661a-3f19-5665-9e27-df437c7e54c8"
 TensorToolbox = "9c690861-8ade-587a-897e-15364bc6f718"
+
+[tool.poetry]
+name = "spectre-defense"
+version = "0.1.0"
+description = "Defending Against Backdoor Attacks Using Robust Statistics"
+authors = ["Jonathan Hayase <jhayase@cs.washington.edu>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.23"
+scipy = "^1.9"
+scikit-learn = "^1.2"
+pandas = "^1.5"
+seaborn = "^0.12"
+tqdm = "^4.64"
+irlbpy = {git = "https://github.com/boonepeter/irlbpy", rev = "pgb"}
+
+[tool.poetry.dev-dependencies]
+ipython = "^8.10"
+pylint = "^2.15"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
